@@ -1,9 +1,10 @@
 const moment = require("moment");
 const axios = require("axios");
+require("dotenv").config();
+
 const { Client, GatewayIntentBits } = require("discord.js");
 
-const TOKEN =
-  "MTE2NzE0MTE0NTIxMDU0MDA3Mg.G5pPHW.qNXbdmuQ6Jhzgj_UOavGuo10BoZR963xuRKfoo";
+const TOKEN = process.env.DISCORD_TOKEN;
 
 const TWITCH_USERNAME = "sebassdev";
 const TWITCH_USERNAME2 = "saabtian_";
