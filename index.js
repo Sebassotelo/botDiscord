@@ -144,4 +144,4 @@ const fetchVideos = async () => {
 setInterval(() => {
   checkTwitchStreamStatus();
   // fetchVideos();
-}, 60000); // Verificar cada 1 minuto
+}, 300000); // Verificar cada 1 minuto
