@@ -77,6 +77,8 @@ const fetchVideos = async () => {
   const fetchYoutube2 = await fetch(
     "https://www.googleapis.com/youtube/v3/search?key=AIzaSyB4BrehJtk5UpVZpFK8aXl4ve2A8sIo6rA&channelId=UCkC0ygRvnJtJuf5uqFsxG3A&part=snippet,id&order=date&maxResults=1&type=video"
   );
+
+  console.log("youtube fech", await fetchYoutube.json());
   const datos = await fetchYoutube.json();
   const datos2 = await fetchYoutube2.json();
 
