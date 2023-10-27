@@ -84,8 +84,8 @@ const fetchVideos = async () => {
   const fechaActual = moment();
 
   // Define la fecha que deseas comparar
-  const fechaComparar = moment(datos.items[0].snippet.publishedAt);
-  const fechaComparar2 = moment(datos2.items[0].snippet.publishedAt);
+  const fechaComparar = await moment(datos.items[0].snippet.publishedAt);
+  const fechaComparar2 = await moment(datos2.items[0].snippet.publishedAt);
 
   // Calcula la diferencia de tiempo entre la fecha actual y la fecha de comparación
   const diferencia = fechaActual.diff(fechaComparar);
